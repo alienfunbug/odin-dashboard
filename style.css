@@ -41,8 +41,8 @@ svg{
 
 .card-svg:hover {
 	width: 2rem;
-	color: rgb(0, 0, 0);
-	fill:rgb(235, 162, 4);
+	color: rgb(255, 251, 0);
+	fill:rgb(240, 190, 83);
 }
 
 
