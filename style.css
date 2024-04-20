@@ -39,6 +39,13 @@ svg{
 	fill: rgb(137, 167, 207);
 }
 
+.card-svg:hover {
+	width: 2rem;
+	color: rgb(0, 0, 0);
+	fill:rgb(235, 162, 4);
+}
+
+
 .nav-svg {
 	color: white;
 	/* Or any color of your choice. */
