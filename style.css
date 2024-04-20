@@ -32,7 +32,7 @@ svg{
 .nav-svg{
     color: white; /* Or any color of your choice. */
     width:2rem; 
-    fill: gray;
+    fill: #e4e4e4;
 
 }
 
@@ -83,9 +83,11 @@ nav{
 
 .nav1{
     grid-row: 1/2;
+    padding-bottom:20px;
 }
 .nav2{
     grid-row: 2/3;
+    padding-bottom:30px;
 
 }
 .nav3{
@@ -110,14 +112,136 @@ nav{
 }
 
 header{
+
     background-color: bisque;
     grid-row:1/2;
     grid-column:2/3;
     display:grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 0.5fr 1fr;
     /*add rows later */
 }
 
+.header1{
+    margin:10px 10px 0 10px;
+    padding:10px;
+    display:flex;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.header2{
+    margin:0 10px 10px 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.user-content-svg{
+    color: white; /* Or any color of your choice. */
+    width:2rem; 
+    fill: gray;
+    padding:20px;
+    min-width:2rem;
+}
+
+.user-content{
+    display:flex;
+    align-items: center;
+ 
+}
+
+.user-content-username{
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding:5px;
+}
+
+.user-info{
+    padding:0 20px;
+    display:flex;
+    align-items: center;
+}
+
+.user-info-avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding-right:10px;
+
+}
+.user-info-greeting{
+    display:flex;
+    flex-direction: column;
+
+
+}
+.user-info-welcome{
+    font-size: 1.1rem;
+    font-weight:600;
+}
+.user-info-handle{
+    font-weight:600;
+}
+
+.share{
+    padding:0 20px;
+    display:flex;
+    justify-content: space-between;
+
+}
+.share-button{
+    margin:0 15px;
+    background-color: rgb(32, 87, 124);
+    color:white;
+    font-size:1.5rem;
+    border-radius: 25px;
+    padding:5px 25px;
+}
+.search-svg{
+    color: white; /* Or any color of your choice. */
+    width:2rem; 
+    fill: gray;
+    padding-right:10px;
+    margin-top:10px;
+}
+
+
+
+
+
+.search-content{
+    display:flex;
+    align-items: center;
+
+
+  
+}
+
+.search-bar{
+    justify-self: center;
+    align-self: center;
+    margin:10px;
+
+}
+
+
+.search-bar-form{
+
+}
+.rounded-search{
+    border-radius: 25px;
+    border: 1px gray solid;
+    padding:5px 5px 5px 25px;
+    background-color: rgb(194, 228, 228,0.4); 
+
+
+}
+
+.flight-search{
+    border-radius: 25px;
+}
 .content{
 
     padding:20px;
@@ -165,21 +289,21 @@ header{
     border-left: 1rem solid rgba(25, 103, 134, 0.9);
     border-radius: 5%;
     box-shadow: 5px 5px 10px gray;
-    height: clamp(150px,250px,1fr); /*may need to remove */
-    width:clamp(200px,1fr,30%);
+
     display:flex;
     flex-direction: column;
     justify-content: space-between  ;
 
 }
 .content-card-text{
-
+    padding:10px 0px 0px 10px;
 }
 
 .content-card-title{
     font-weight: 600;
 }
 .content-card-details{
+
 
 }
 .content-card-icons{
@@ -247,7 +371,7 @@ header{
 }
 
 .trending{
-
+padding-top:10px;
 }
 
 .trending-title{
