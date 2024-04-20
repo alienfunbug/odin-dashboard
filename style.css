@@ -119,6 +119,8 @@ header{
 }
 
 .content{
+
+    padding:20px;
     background-color: rgb(194, 228, 228);
     grid-row:2/3;
     grid-column:2/3;
@@ -130,6 +132,7 @@ header{
 }
 
 .content-title{
+    font-weight: 600;
     justify-self: start;
     grid-row: 1/2;
     grid-column: 1/2;
@@ -144,6 +147,7 @@ header{
 
 .content-card-area{
 
+    padding:10px;
     grid-column: 1/2;
     grid-row: 2/3;
     display:grid;
@@ -188,11 +192,11 @@ header{
 
 
 .rightside-content{
+
     display:flex;
     flex-direction: column;
     height:inherit;
     flex-grow:1;
-
     justify-content: space-between;
     
     /*
@@ -211,6 +215,7 @@ header{
 
 .announcement-title{
     font-weight: 600;
+ 
 }
 .announcement-card-title{
     font-weight: 600;
@@ -218,7 +223,10 @@ header{
 }
 
 .announcement-card-area{
-    padding:0 15px 15px 15px;
+    padding:10px 15px 15px 15px;
+    margin:10px;
+    background-color: antiquewhite;
+    border-radius: 15px;
 
 
 }
@@ -250,7 +258,12 @@ header{
 
 }
 .trending-card-area{
-    padding:0 15px 15px 15px;
+    padding:10px 15px 15px 15px;
+    margin:10px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+
+
 }
 
 .trending-card{
@@ -264,6 +277,21 @@ header{
     background-color: rgb(255, 255, 255);
     border-radius: 5%;
     box-shadow: 5px 5px 10px rgb(145, 155, 58);
+    display:flex;
+    align-items:center;
 
 
 }
+
+.trending-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-right:10px;
+  }
+
+  .trending-card-username{
+    font-weight:600;
+    font-size: 1.1rem;
+    color:rgb(125, 130, 207);
+  }
