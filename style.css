@@ -38,11 +38,11 @@ svg{
 
 
 .icon-container{
-    margin:20px;
+    margin:10px;
     display:grid;
     grid-template-columns:70px 130px;
     color:rgb(255, 255, 255,.6);  
-    padding-left:10px;  
+    padding:10px;  
 }
 
 .icon-container:hover{
@@ -50,7 +50,7 @@ svg{
     color:white;
     transition: .1s ease;
     background-color: rgb(170, 170, 170,0.2);
-  
+
 }
 .icon-text{
     align-self: center;
