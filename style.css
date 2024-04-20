@@ -14,33 +14,38 @@ svg{
 .dashboard-text{
     align-self: center;
     margin-left:-10px;
-    padding-left:5px;
-    font-size:2.2rem;
+    font-size:2rem;
     font-weight:400;
 }
 .dashboard-svg{
     margin-left:-10px;
     color: white; /* Or any color of your choice. */
-    width:80px; 
+    width:4rem; 
     fill: gray;
 }
 
+.card-svg{
+    width:2rem;
+    fill: rgb(137, 167, 207);
+    
+}
 .nav-svg{
     color: white; /* Or any color of your choice. */
-    width:40px; 
+    width:2rem; 
     fill: gray;
+
 }
 
 .icon-container{
     margin:20px;
     display:grid;
-    grid-template-columns:70px 1fr;
+    grid-template-columns:70px 130px;
 }
 .icon-text{
     align-self: center;
     padding:2px 2px 0 2px;
     font-size:1.2rem;
-  
+
 }
 
 
@@ -53,10 +58,11 @@ html,body{
 .body{
     display:grid;
     grid-template-rows:1fr 4fr ;
-    grid-template-columns:1fr 4fr; 
-    gap:1%;
+    grid-template-columns:0.5fr 5fr;
+    gap:10px;
     height:100%;
     font-size: 30px;
+   
 }
 
 
@@ -70,20 +76,19 @@ nav{
     grid-row: 1/3;
     grid-column: 1/2;
     display:grid;
-    /*grid-template-columns: 1fr 4fr;*/
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 0.5fr 1fr 2fr;
+  
 }
 
 .nav1{
-
     grid-row: 1/2;
 }
 .nav2{
-
     grid-row: 2/3;
+
 }
 .nav3{
-
     grid-row: 3/4;
 }
 
@@ -138,23 +143,26 @@ header{
 }*/
 
 .content-card-area{
+
     grid-column: 1/2;
     grid-row: 2/3;
     display:grid;
     gap:20px;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 }
 
 
 
 .content-card{
-    font-size: 25px;
+    margin:5px;
+    font-size: 1.2rem;
     background-color: rgb(255, 255, 255);
     border-left: 1rem solid rgba(25, 103, 134, 0.9);
     border-radius: 5%;
     box-shadow: 5px 5px 10px gray;
-    height: max(200px,1fr); /*may need to remove */
+    height: clamp(150px,250px,1fr); /*may need to remove */
+    width:clamp(200px,1fr,30%);
     display:flex;
     flex-direction: column;
     justify-content: space-between  ;
@@ -202,19 +210,31 @@ header{
 }
 
 .announcement-title{
-
+    font-weight: 600;
+}
+.announcement-card-title{
+    font-weight: 600;
+    margin-left:10px;
 }
 
 .announcement-card-area{
+    padding:0 15px 15px 15px;
+
 
 }
 .announcement-card{
+
+    margin:10px;
+    font-size: 1.2rem;
+    padding:10px;
+    height:auto;
+    width:auto;
+
     font-size: 15px;
     background-color: rgb(255, 255, 255);
-    border-left: 1rem solid rgba(16, 81, 83, 0.9);
     border-radius: 5%;
     box-shadow: 5px 5px 10px rgb(145, 155, 58);
-    margin:0 0 20px 5px ;
+
 
 }
 
@@ -223,18 +243,27 @@ header{
 }
 
 .trending-title{
+    font-weight: 600;
+    margin-left:10px;
+}
+.trending-card-title{
 
 }
-
 .trending-card-area{
+    padding:0 15px 15px 15px;
 }
 
 .trending-card{
+    margin:10px;
+    font-size: 1.2rem;
+    padding:10px;
+    height:auto;
+    width:auto;
+
     font-size: 15px;
     background-color: rgb(255, 255, 255);
-    border-left: 1rem solid rgba(16, 81, 83, 0.9);
     border-radius: 5%;
     box-shadow: 5px 5px 10px rgb(145, 155, 58);
-    margin:0 0 20px 5px ;
+
 
 }
